@@ -1,26 +1,46 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/base:0-buster",
+  "name": "Jamstack",
+  "image": "mcr.microsoft.com/devcontainers/base:0-bullseye",
+"features": {
+	"ghcr.io/devcontainers/features/git:1": {},
+  "ghcr.io/devcontainers/features/go:1": {},
+	"ghcr.io/devcontainers/features/hugo:1": {
+    "version": "0.91.2",
+    "extended": true
+},
+"ghcr.io/devcontainers/features/node:1": {
+  "version": "18"
+}
+  },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "",
   "postCreateCommand": "",
   "postAttachCommand": {
-    "server": "hugo serve"
+    // "server": "hugo serve"
   },
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "README.md"
+        // "README.md"
       ]
     }
   },
+  // "settings": {
+  //   "terminal.integrated.shell.linux": "/bin/bash"
+  // },
+  "extensions": [
+    "EditorConfig.EditorConfig"
+  //   "christian-kohler.npm-intellisense",
+  //   "DavidAnson.vscode-markdownlint",
+  //   "dbaeumer.vscode-eslint",
+  //   "eamodio.gitlens",
+  //   "redhat.vscode-yaml"
+  ],
+  "forwardPorts": [1313],
   "portsAttributes": {
     "1313": {
       "label": "Application",
       "onAutoForward": "openPreview"
     }
-  },
-  "forwardPorts": [1313],
-  "features": {
-    "ghcr.io/devcontainers/features/hugo:1": {}
   }
 }
