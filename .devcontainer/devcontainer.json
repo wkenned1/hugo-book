@@ -16,7 +16,7 @@
   "updateContentCommand": "",
   "postCreateCommand": "",
   "postAttachCommand": {
-    "server": "hugo server"
+    "server": "hugo server --noHTTPCache --disableFastRender"
   },
   "customizations": {
     "codespaces": {
