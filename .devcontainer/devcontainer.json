@@ -16,7 +16,7 @@
   "updateContentCommand": "",
   "postCreateCommand": "",
   "postAttachCommand": {
-    // "server": "hugo serve"
+    // "server": "hugo server"
   },
   "customizations": {
     "codespaces": {
@@ -25,16 +25,16 @@
       ]
     }
   },
-  // "settings": {
-  //   "terminal.integrated.shell.linux": "/bin/bash"
-  // },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "zsh"
+  },
   "extensions": [
-    "EditorConfig.EditorConfig"
+    "EditorConfig.EditorConfig",
   //   "christian-kohler.npm-intellisense",
   //   "DavidAnson.vscode-markdownlint",
   //   "dbaeumer.vscode-eslint",
   //   "eamodio.gitlens",
-  //   "redhat.vscode-yaml"
+    "redhat.vscode-yaml"
   ],
   "forwardPorts": [1313],
   "portsAttributes": {
