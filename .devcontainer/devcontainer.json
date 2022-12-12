@@ -19,6 +19,15 @@
     "server": "hugo server --noHTTPCache --disableFastRender"
   },
   "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.linkedEditing": true,
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "files.autoSave": "onFocusChange",
+        "gitlens.currentLine.enabled": false
+      }
+    },
     "codespaces": {
       "openFiles": [
         "README.md"
@@ -30,9 +39,11 @@
   },
   "extensions": [
     "EditorConfig.EditorConfig",
-  //   "christian-kohler.npm-intellisense",
-  //   "DavidAnson.vscode-markdownlint",
-  //   "dbaeumer.vscode-eslint",
+    //   "christian-kohler.npm-intellisense",
+    //   "DavidAnson.vscode-markdownlint",
+    //   "dbaeumer.vscode-eslint",
+    // "sleistner.vscode-fileutils",
+    //   "patbenatar.advanced-new-file",
     "eamodio.gitlens",
     "redhat.vscode-yaml"
   ],

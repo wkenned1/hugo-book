@@ -1,27 +1,27 @@
 baseURL: http://example.org/
-languageCode: en-us 
-title: Acme Corporation 
-theme: Eclectic 
-author: 
-  facebook: "https://facebook.com/example" 
-  twitter: "https://twitter.com/example" 
-  email: "contact@example.org" 
-  name: "Acme Corporation" 
-  location: New York 
-  phone: (999) 999-9999 
-  hours: "**Mon-Fri:** 9:00AM - 6:00PM, ET" 
+languageCode: en-us
+title: Acme Corporation
+theme: Eclectic
+author:
+  facebook: "https://facebook.com/example"
+  twitter: "https://twitter.com/example"
+  email: "contact@example.org"
+  name: "Acme Corporation"
+  location: New York
+  phone: (999) 999-9999
+  hours: "**Mon-Fri:** 9:00AM - 6:00PM, ET"
 
 menu:
-  main: 
-    - identifier: about 
-      name: About 
-      url: /about 
-      weight: 100 
-    - identifier: contact 
-      name: Contact 
-      url: /contact 
-      weight: 200 
-params: 
+  main:
+    - identifier: about
+      name: About
+      url: /about
+      weight: 100
+    - identifier: contact
+      name: Contact
+      url: /contact
+      weight: 200
+params:
   color: "#4f46e5"
   copyright: "Copyright &copy; 2022 Acme Corporation.
     All Rights Reserved."
