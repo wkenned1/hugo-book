@@ -140,7 +140,7 @@ We may update this privacy notice from time to time. The updated version will be
 HOW CAN YOU CONTACT US ABOUT THIS POLICY?
 ----------------------------------------
 
-If you have questions or comments about this policy, you may contact our Data Protection Officer (DPO), DPO Sample, by email at [dpo@exmaple.org](mailto:dpo@exmaple.org), by phone at [(999)999-9999](tel:9999999999), or by post to:
+If you have questions or comments about this policy, you may contact our Data Protection Officer (DPO), DPO Sample, by email at [dpo@exmaple.org](mnailto:dpo@exmaple.org), by phone at [(999)999-9999](tel:9999999999), or by post to:
 
 Acme Corporation
 Data Protection Officer
