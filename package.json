@@ -5,6 +5,7 @@
   },
   "devDependencies": {
     "prettier": "^2.8.1",
+    "prettier-plugin-go-template": "^0.0.13",
     "prettier-plugin-sh": "^0.12.8"
   }
 }

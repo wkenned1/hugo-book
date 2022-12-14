@@ -1,8 +1,14 @@
+# General
 build/
 coverage/
 dist/
-node_modules/
 public/
 *.env
-*.lock
 CHANGELOG.md
+
+# Node
+node_modules/
+
+# Hugo
+resources/
+*.lock
