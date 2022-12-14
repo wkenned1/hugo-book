@@ -1,6 +1,10 @@
 {
   "name": "Jamstack",
   "image": "mcr.microsoft.com/devcontainers/base:0-bullseye",
+  "containerEnv": {
+    "CI": "false",
+    "NODE_ENV": "development"
+  },
   "features": {
     // General
     "ghcr.io/devcontainers/features/git:1": {},
@@ -41,7 +45,7 @@
 
     // Prettier
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.configPath": "config/prettier/.prettierrc.yaml",
+    "prettier.configPath": "configs/prettier/.prettierrc.yaml",
     "prettier.ignorePath": ".gitignore",
     "prettier.requireConfig": true
   },
