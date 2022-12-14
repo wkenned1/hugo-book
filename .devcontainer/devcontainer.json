@@ -2,15 +2,48 @@
   "name": "Jamstack",
   "image": "mcr.microsoft.com/devcontainers/base:0-bullseye",
   "features": {
+    // General
     "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    },
+
+    // Static Site Generator
     "ghcr.io/devcontainers/features/go:1": {},
     "ghcr.io/devcontainers/features/hugo:1": {
       "version": "0.91.2",
       "extended": true
-    },
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "18"
     }
+  },
+  "extensions": [
+    // General
+    "eamodio.gitlens",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "redhat.vscode-yaml"
+
+    //   "christian-kohler.npm-intellisense",
+    //   "DavidAnson.vscode-markdownlint",
+    //   "dbaeumer.vscode-eslint",
+    // "sleistner.vscode-fileutils",
+    //   "patbenatar.advanced-new-file",
+  ],
+  "settings": {
+    // General
+    "editor.linkedEditing": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+
+    // GitLens
+    "gitlens.currentLine.enabled": false,
+
+    // Prettier
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.configPath": "config/prettier/.prettierrc.yaml",
+    "prettier.ignorePath": ".gitignore",
+    "prettier.requireConfig": true
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
@@ -20,37 +53,10 @@
   },
   "customizations": {
     "codespaces": {
-      "openFiles": [
-        "README.md"
-      ]
+      "openFiles": ["README.md"]
     }
   },
-  "extensions": [
-    "EditorConfig.EditorConfig",
-    //   "christian-kohler.npm-intellisense",
-    //   "DavidAnson.vscode-markdownlint",
-    //   "dbaeumer.vscode-eslint",
-    // "sleistner.vscode-fileutils",
-    //   "patbenatar.advanced-new-file",
-    "eamodio.gitlens",
-    "esbenp.prettier-vscode",
-    "redhat.vscode-yaml"
-  ],
-  "settings": {
-    "editor.linkedEditing": true,
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "files.autoSave": "onFocusChange",
-    "gitlens.currentLine.enabled": false,
-    "terminal.integrated.defaultProfile.linux": "zsh",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.requireConfig": true,
-    "prettier.configPath": "config/prettier/.prettierrc.yaml",
-    "prettier.ignorePath": ".gitignore"
-  },
-  "forwardPorts": [
-    1313
-  ],
+  "forwardPorts": [1313],
   "portsAttributes": {
     "1313": {
       "label": "Application",
