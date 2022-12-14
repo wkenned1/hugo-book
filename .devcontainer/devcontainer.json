@@ -52,9 +52,10 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
   "postCreateCommand": "",
-  "postAttachCommand": {
+  "postStartCommand": {
     "server": "npm run dev"
   },
+  "postAttachCommand": "",
   "customizations": {
     "codespaces": {
       "openFiles": ["README.md"]
