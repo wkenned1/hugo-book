@@ -51,7 +51,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
-  "postStartCommand": {
+  "postAttachCommand": {
     "server": "npm run dev"
   },
   "customizations": {
