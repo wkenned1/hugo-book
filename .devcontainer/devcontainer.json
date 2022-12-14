@@ -53,7 +53,7 @@
   "updateContentCommand": "npm install",
   "postCreateCommand": "",
   "postStartCommand": {
-    "server": "npm run dev"
+    // "server": "npm run dev"
   },
   "postAttachCommand": "",
   "customizations": {
