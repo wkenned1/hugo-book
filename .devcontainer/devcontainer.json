@@ -1,41 +1,29 @@
 {
   "name": "Jamstack",
   "image": "mcr.microsoft.com/devcontainers/base:0-bullseye",
-"features": {
-	"ghcr.io/devcontainers/features/git:1": {},
-  "ghcr.io/devcontainers/features/go:1": {},
-	"ghcr.io/devcontainers/features/hugo:1": {
-    "version": "0.91.2",
-    "extended": true
-},
-"ghcr.io/devcontainers/features/node:1": {
-  "version": "18"
-}
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/go:1": {},
+    "ghcr.io/devcontainers/features/hugo:1": {
+      "version": "0.91.2",
+      "extended": true
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "",
+  "updateContentCommand": "npm install",
   "postCreateCommand": "",
   "postAttachCommand": {
-    "server": "hugo server --noHTTPCache --disableFastRender"
+    "server": "npm run dev"
   },
   "customizations": {
-    "vscode": {
-      "settings": {
-        "editor.linkedEditing": true,
-        "editor.formatOnSave": true,
-        "editor.formatOnPaste": true,
-        "files.autoSave": "onFocusChange",
-        "gitlens.currentLine.enabled": false
-      }
-    },
     "codespaces": {
       "openFiles": [
         "README.md"
       ]
     }
-  },
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "zsh"
   },
   "extensions": [
     "EditorConfig.EditorConfig",
@@ -45,9 +33,24 @@
     // "sleistner.vscode-fileutils",
     //   "patbenatar.advanced-new-file",
     "eamodio.gitlens",
+    "esbenp.prettier-vscode",
     "redhat.vscode-yaml"
   ],
-  "forwardPorts": [1313],
+  "settings": {
+    "editor.linkedEditing": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "files.autoSave": "onFocusChange",
+    "gitlens.currentLine.enabled": false,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.requireConfig": true,
+    "prettier.configPath": "config/prettier/.prettierrc.yaml",
+    "prettier.ignorePath": ".gitignore"
+  },
+  "forwardPorts": [
+    1313
+  ],
   "portsAttributes": {
     "1313": {
       "label": "Application",

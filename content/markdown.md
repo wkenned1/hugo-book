@@ -1,5 +1,4 @@
-Markdown
-===========
+# Markdown
 
 I am a paragraph in markdown with line
 wrapping so fit in this width.
@@ -8,52 +7,62 @@ as there is no empty line before me.
 
 I am in the second paragraph.
 
-
 I am the third one. Even though there are
 two line breaks before me, this does not
 create any newline characters. After me there
-are two spaces before the newline character.  
+are two spaces before the newline character.
 I have a line break before me. Even though
 I am not a new paragraph, I do start on a
 new line due to the manual line break via
 spaces before the newline character.
 
-Top Level H1
-=============
-H2
----
+# Top Level H1
+
+## H2
 
 #Just a tag
 \# Not a heading
 Also a # tag.
+
 # Alternate H1
+
 ## Alternate H2
+
 ### H3
+
 ###### H6
 
-* This is a list element
-+ This is also a list element
-- This is also a list element
-     - This is a sublist element
-     + Also a sublist element
-       + Sublist level 2
-       1. Numbered sublist
-       2. Next item
-             1. Next indent level
+- This is a list element
 
-1) Numbered list
-2) Next item
-     1. Next indent level
-        * Sublist non numbered
-3. Back
+* This is also a list element
+
+- This is also a list element
+  - This is a sublist element
+  * Also a sublist element
+    - Sublist level 2
+    1.  Numbered sublist
+    2.  Next item
+        1.  Next indent level
+
+1. Numbered list
+2. Next item
+   1. Next indent level
+      - Sublist non numbered
+
+3) Back
 
 Horizontal Lines:
 
-------------------------------------
+---
+
 .
-***********************************
+
+---
+
 .
-***
+
+---
+
 .
 
 ---
@@ -64,13 +73,13 @@ Horizontal Lines:
 
 ## Inline formatting
 
-*Italics*
+_Italics_
 
 _Italics_
 
-__Bold__
+**Bold**
 
-__*Bold+Italics*__
+**_Bold+Italics_**
 
 **_Bold+Italics_**
 
@@ -96,7 +105,6 @@ Sample inline code `a++` can be specified here.
 
 ![Alt Text](/path/to/image "Optional Tooltip")
 
-
 ## HTML escaped characters and inline HTML
 
 Copyright: &copy;
@@ -119,29 +127,27 @@ Floating image via HTML: <img src="/image/logo.png" style="float: right; padding
 
 ## Tables, code blocks and task lists
 
-   Name | Job
---------|------
-   Alex | Web Developer
-    Bob | Sys Admin
-   Gabby| Technical Writer
-
+| Name  | Job              |
+| ----- | ---------------- |
+| Alex  | Web Developer    |
+| Bob   | Sys Admin        |
+| Gabby | Technical Writer |
 
 ### Alternate table
 
-
-|  Name | Mantra |
-|  ---  | --- |
-| Alex  | There must be a better way. |
-| Bob   | Play it safe. |
+| Name  | Mantra                                |
+| ----- | ------------------------------------- |
+| Alex  | There must be a better way.           |
+| Bob   | Play it safe.                         |
 | Gabby | Try everything, but do what you like. |
 
 ### Table alignment
 
-| Index |  Product | Edges |
-| --:   |  :--  | :-: |
-| 1.  | Circle  | 0 |
-| 2.  | Line   | 1 |
-| 3.  | Square | 4 |
+| Index | Product | Edges |
+| ----: | :------ | :---: |
+|    1. | Circle  |   0   |
+|    2. | Line    |   1   |
+|    3. | Square  |   4   |
 
 ## Acme website task list
 
@@ -154,7 +160,7 @@ Floating image via HTML: <img src="/image/logo.png" style="float: right; padding
 ## Code block
 
 ```javascript
-var x= 10;
+var x = 10;
 x++;
 console.log(x);
 ```
@@ -172,6 +178,7 @@ while (!success) {
 ```
 
 ## Direct Emojis
+
 Smile please :smile:
 
 I :heart: Hugo
@@ -187,7 +194,6 @@ This will convert to a dash --
 This is followed by ellipses ...
 
 ## This is extra highlighted{style="background: yellow"}
-
 
 ## Definition Lists
 
