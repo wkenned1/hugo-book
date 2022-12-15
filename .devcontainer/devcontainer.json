@@ -1,10 +1,6 @@
 {
   "name": "Jamstack",
   "image": "mcr.microsoft.com/devcontainers/base:0-bullseye",
-  "containerEnv": {
-    "CI": "false",
-    "NODE_ENV": "development"
-  },
   "features": {
     // General
     "ghcr.io/devcontainers/features/git:1": {},
@@ -19,13 +15,7 @@
       "extended": true
     }
   },
-  "waitFor": "onCreateCommand",
-  "updateContentCommand": "npm install",
-  "postStartCommand": "nohup bash -c 'npm run dev &'",
   "customizations": {
-    "codespaces": {
-      "openFiles": ["README.md"]
-    },
     "vscode": {
       "extensions": [
         // General
@@ -57,12 +47,22 @@
         "prettier.ignorePath": ".gitignore",
         "prettier.requireConfig": true
       }
+    },
+    "codespaces": {
+      "openFiles": ["README.md"]
     }
   },
+  "containerEnv": {
+    "CI": "false",
+    "NODE_ENV": "development"
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "npm install",
+  "postStartCommand": "nohup bash -c 'npm run dev &'",
   "forwardPorts": [1313],
   "portsAttributes": {
     "1313": {
-      "label": "Application",
+      "label": "Web",
       "onAutoForward": "openPreview"
     }
   }
