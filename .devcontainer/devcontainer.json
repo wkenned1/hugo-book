@@ -51,9 +51,7 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
-  "postAttachCommand": {
-    "server": "npm run dev"
-  },
+  "postStartCommand": "nohup bash -c 'npm run dev &'",
   "customizations": {
     "codespaces": {
       "openFiles": ["README.md"]
