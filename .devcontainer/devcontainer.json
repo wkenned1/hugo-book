@@ -22,13 +22,13 @@
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
-        "redhat.vscode-yaml",
+        "redhat.vscode-yaml"
 
-        "christian-kohler.npm-intellisense",
-        "DavidAnson.vscode-markdownlint",
-        "dbaeumer.vscode-eslint",
-        "sleistner.vscode-fileutils",
-        "patbenatar.advanced-new-file"
+        // "christian-kohler.npm-intellisense",
+        // "DavidAnson.vscode-markdownlint",
+        // "dbaeumer.vscode-eslint",
+        // "sleistner.vscode-fileutils",
+        // "patbenatar.advanced-new-file"
       ],
       "settings": {
         // General
