@@ -19,42 +19,44 @@
       "extended": true
     }
   },
-  "extensions": [
-    // General
-    "eamodio.gitlens",
-    "EditorConfig.EditorConfig",
-    "esbenp.prettier-vscode",
-    "redhat.vscode-yaml"
-
-    //   "christian-kohler.npm-intellisense",
-    //   "DavidAnson.vscode-markdownlint",
-    //   "dbaeumer.vscode-eslint",
-    // "sleistner.vscode-fileutils",
-    //   "patbenatar.advanced-new-file",
-  ],
-  "settings": {
-    // General
-    "editor.linkedEditing": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "files.autoSave": "onFocusChange",
-    "terminal.integrated.defaultProfile.linux": "zsh",
-
-    // GitLens
-    "gitlens.currentLine.enabled": false,
-
-    // Prettier
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.configPath": "configs/prettier/.prettierrc.yaml",
-    "prettier.ignorePath": ".gitignore",
-    "prettier.requireConfig": true
-  },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "npm install",
   "postStartCommand": "nohup bash -c 'npm run dev &'",
   "customizations": {
     "codespaces": {
       "openFiles": ["README.md"]
+    },
+    "vscode": {
+      "extensions": [
+        // General
+        "eamodio.gitlens",
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode",
+        "redhat.vscode-yaml"
+
+        //   "christian-kohler.npm-intellisense",
+        //   "DavidAnson.vscode-markdownlint",
+        //   "dbaeumer.vscode-eslint",
+        // "sleistner.vscode-fileutils",
+        //   "patbenatar.advanced-new-file",
+      ],
+      "settings": {
+        // General
+        "editor.linkedEditing": true,
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "files.autoSave": "onFocusChange",
+        "terminal.integrated.defaultProfile.linux": "zsh",
+
+        // GitLens
+        "gitlens.currentLine.enabled": false,
+
+        // Prettier
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.configPath": "configs/prettier/.prettierrc.yaml",
+        "prettier.ignorePath": ".gitignore",
+        "prettier.requireConfig": true
+      }
     }
   },
   "forwardPorts": [1313],

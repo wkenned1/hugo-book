@@ -5,6 +5,7 @@ dist/
 public/
 *.env
 CHANGELOG.md
+nohup.out
 
 # Node
 node_modules/
