@@ -23,7 +23,6 @@
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
         "GitHub.vscode-pull-request-github",
-        "MS-vsliveshare.vsliveshare",
         "redhat.vscode-yaml"
 
         // "christian-kohler.npm-intellisense",
