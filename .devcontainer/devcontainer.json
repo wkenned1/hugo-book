@@ -19,7 +19,6 @@
     "vscode": {
       "extensions": [
         // General
-        // ISSUE: #3 Remove gitignore extension
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
@@ -43,7 +42,6 @@
         // GitLens
         "gitlens.currentLine.enabled": false,
 
-        // ISSUE: #1 add @andreilg
         // GitHub Pull Requests and Issues
         "githubIssues.createIssueTriggers": ["ISSUE"],
 
