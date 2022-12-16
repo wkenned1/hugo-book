@@ -19,7 +19,7 @@
     "vscode": {
       "extensions": [
         // General
-        "codezombiech.gitignore",
+        // ISSUE: #3 Remove gitignore extension
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
