@@ -41,6 +41,7 @@
         // GitLens
         "gitlens.currentLine.enabled": false,
 
+        // ISSUE: #1 add @andreilg
         // Prettier
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "prettier.configPath": "configs/prettier/.prettierrc.yaml",
