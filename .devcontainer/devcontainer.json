@@ -19,6 +19,7 @@
     "vscode": {
       "extensions": [
         // General
+        "codezombiech.gitignore",
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
