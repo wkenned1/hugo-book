@@ -22,6 +22,7 @@
         "eamodio.gitlens",
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
+        "GitHub.remotehub",
         "GitHub.vscode-pull-request-github",
         "redhat.vscode-yaml"
 
@@ -37,13 +38,14 @@
         "editor.formatOnPaste": true,
         "editor.formatOnSave": true,
         "files.autoSave": "onFocusChange",
+        "telemetry.telemetryLevel": "off",
         "terminal.integrated.defaultProfile.linux": "zsh",
 
         // GitLens
         "gitlens.currentLine.enabled": false,
 
-        // GitHub Pull Requests and Issues
-        "githubIssues.createIssueTriggers": ["ISSUE"],
+        // YAML
+        "redhat.telemetry.enabled": false,
 
         // Prettier
         "editor.defaultFormatter": "esbenp.prettier-vscode",
